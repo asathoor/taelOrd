@@ -1,0 +1,33 @@
+#!/bin/bash
+# Counting the results of articles with the word sex in a http-reference to an article
+# Version 0.1
+# Author: Per Thykjaer Jensen, MA
+# (c) Per Thykjaer Jensen 06-02-2010 
+# Licence GNU/GPL2
+# Results is in the file stiften.txt (make one if it's missing)
+# Depencencies: lynx
+
+# webpages to check
+stiften="www.stiften.dk"
+bt="www.bt.dk"
+ekstrabladet="www.ekstrabladet.dk"
+politiken="www.politiken.dk"
+jp="www.jp.dk"
+pb="www.playboy.com"
+
+# scrape data and send to file
+date >> stiften.txt
+echo $stiften >> stiften.txt
+lynx -dump $stiften | grep sex -c >> stiften.txt
+echo $bt >> stiften.txt
+lynx -dump $bt | grep sex -c >> stiften.txt
+echo $politiken >> stiften.txt
+lynx -dump $politiken | grep sex -c >> stiften.txt
+echo $ekstrabladet >> stiften.txt
+lynx -dump $ekstrabladet | grep sex -c >> stiften.txt
+echo $jp >> stiften.txt
+lynx -dump $jp | grep sex -c >> stiften.txt
+echo $pb >> stiften.txt
+lynx -dump $pb | grep sex -c >> stiften.txt
+echo "===" >> stiften.txt
+exit

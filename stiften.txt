@@ -1,0 +1,33 @@
+# taeller forekomst af ordet artikler med ordet sex (trunkeret) på websider
+# programmet taelStiften samler disse data
+#
+===
+
+lør feb  6 16:42:29 CET 2010
+www.stiften.dk
+20
+www.bt.dk
+24
+www.politiken.dk
+4
+www.ekstrabladet.dk
+39
+www.jp.dk
+0
+www.playboy.com
+16
+===
+søn mar  4 09:29:14 CET 2012
+www.stiften.dk
+0
+www.bt.dk
+0
+www.politiken.dk
+0
+www.ekstrabladet.dk
+0
+www.jp.dk
+0
+www.playboy.com
+0
+===
